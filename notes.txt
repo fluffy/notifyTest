@@ -1,0 +1,14 @@
+
+Need to have rabitMQ and redis running 
+start message bus with 
+sudo rabbitmq-server
+
+
+For a new device called dev1, setup the routing for it with 
+
+msgSetup.py dev1 
+
+You can send and receive messages to it with msgRecv.py
+
+The server runs 
+

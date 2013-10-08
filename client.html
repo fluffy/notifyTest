@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>WebSocket Test Page</title>
+</head>
+<body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+{% include "client.js" %}
+</script>
+<h1></h1>
+
+WebSocket Test Page for {{ user }} 
+<br/>
+
+Msg: <span id='msgValue'> NOT CONNECTED </span> 
+
+
+<form id="msgForm" action="http://localhost:8888/pub/{{user}}" method="post">
+   Send Message: <input id="msg" name="msg" type="text" />
+   <input id="send" type="submit" value="Send" />
+ </form>
+
+</body> </html>
